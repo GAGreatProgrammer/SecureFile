@@ -6,7 +6,7 @@
 SecureFile is a program that is designed to protect user files from illegal access. The program can protect any file with AES encryption and decryption algorithm. The high degree of file protection allows user to send files to third parties without fear for confidentiality.
 <br/>
 
-## Applicaton Description
+## Application Description
 ---
 ![SecureFile](https://raw.githubusercontent.com/GAGreatProgrammer/SecureFile/master/SecureFile/Assets/SecureFile.PNG)
 
