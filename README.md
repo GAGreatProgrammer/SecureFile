@@ -10,7 +10,7 @@ SecureFile is a program that is designed to protect user files from illegal acce
 ---
 ![SecureFile](https://raw.githubusercontent.com/GAGreatProgrammer/SecureFile/master/SecureFile/Assets/SecureFile.PNG)
 
-You don't need to be an advanced user to use the SecureFile app. You just need to enter a password that will be used to encrypt and decrypt files, select a method (encrypt or decrypt a file), and finally, choose whether the original file will be deleted after procedure or not. After entering these parameters, the user just needs to select the desired file and click the start button.
+You don't need to be an advanced user to use the SecureFile app. You just need to enter a password that will be used to encrypt and decrypt files, select a method (encrypt or decrypt a file), and finally, choose whether the original file will be deleted after procedure or not. After entering these parameters, the user just needs to select the desired file and click the "Run" button.
 
 <n/>
 
