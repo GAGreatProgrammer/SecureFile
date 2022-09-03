@@ -131,7 +131,7 @@ namespace SecureFile
             cboAction.Text = "";
             File = null;
 
-            btnClose.Enabled = true;
+            //btnClose.Enabled = true;
             btnCancel.Enabled = true;
             btnUpload.Enabled = true;
 
@@ -167,7 +167,7 @@ namespace SecureFile
             cboAction.Text = "";
             File = null;
 
-            btnClose.Enabled = true;
+            //btnClose.Enabled = true;
             btnCancel.Enabled = true;
             btnUpload.Enabled = true;
 
@@ -195,7 +195,7 @@ namespace SecureFile
             {
                 if (cboProcedure.SelectedIndex == 0)
                 {
-                    btnClose.Enabled = false;
+                    //btnClose.Enabled = false;
                     btnRun.Enabled = false;
                     btnCancel.Enabled = false;
                     btnUpload.Enabled = false;
@@ -207,7 +207,7 @@ namespace SecureFile
 
                 else if (cboProcedure.SelectedIndex == 1)
                 {
-                    btnClose.Enabled = false;
+                    //btnClose.Enabled = false;
                     btnRun.Enabled = false;
                     btnCancel.Enabled = false;
                     btnUpload.Enabled = false;
@@ -262,7 +262,7 @@ namespace SecureFile
             cboProcedure.Text = "";
             cboAction.Text = "";
             File = null;
-            btnClose.Enabled = true;
+            //btnClose.Enabled = true;
             btnRun.Enabled = false;
 
         }
@@ -274,7 +274,15 @@ namespace SecureFile
 
         private void btnClose_Click_1(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            if (bgwEncrypt.IsBusy || bgwDecrypt.IsBusy || bgwGetHASHEncrypted.IsBusy || bgwGetHASHDecrypted.IsBusy)
+            {
+                sbMessage.Show(this, "Wait for the end of the operation!", BunifuSnackbar.MessageTypes.Warning,
+                duration: 3000, position: BunifuSnackbar.Positions.TopCenter);
+            }
+            else
+                Environment.Exit(0);
+
+            //Environment.Exit(0);
         }
     }
 }
